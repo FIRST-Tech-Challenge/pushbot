@@ -1,4 +1,4 @@
-package com.qualcomm.ftcrobotcontroller.opmodes;
+package org.firstinspires.ftc.teamcode;
 
 import com.qualcomm.ftccommon.DbgLog;
 import com.qualcomm.robotcore.hardware.IrSeekerSensor;
@@ -20,7 +20,7 @@ import com.qualcomm.robotcore.util.Range;
  * calls to methods will fail, but will not cause the application to crash.
  *
  * @author SSI Robotics
- * @version 2015-08-13-20-04
+ * @version 2016-09-05-20-04
  */
 public class PushBotHardwareSensors extends PushBotTelemetry
 

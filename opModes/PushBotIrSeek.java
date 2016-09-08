@@ -1,8 +1,7 @@
-package com.qualcomm.ftcrobotcontroller.opmodes;
+package org.firstinspires.ftc.teamcode;
 
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
-
-import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
+import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.IrSeekerSensor;
 import com.qualcomm.robotcore.util.Range;
@@ -12,12 +11,16 @@ import com.qualcomm.robotcore.util.Range;
  * An example linear op mode where the pushbot
  * will track an IR beacon.
  */
+@TeleOp(name = "PushBotIrSeek", group = "pushbot")
+//@Disabled
+// comment out the above line if you want this op mode to be enabled.
 public class PushBotIrSeek extends LinearOpMode {
     final static double kBaseSpeed = 0.15;  // Higher values will cause the robot to move faster
 
     final static double kMinimumStrength = 0.08; // Higher values will cause the robot to follow closer
     final static double kMaximumStrength = 0.60; // Lower values will cause the robot to stop sooner
 
+    //IrSeekerSensor irSeeker;
     IrSeekerSensor irSeeker;
     DcMotor leftMotor;
     DcMotor rightMotor;
@@ -48,8 +51,9 @@ public class PushBotIrSeek extends LinearOpMode {
             telemetry.addData("Seeker", irSeeker.toString());
             telemetry.addData("Speed", " Left=" + leftMotor.getPower() + " Right=" + rightMotor.getPower());
 
-            //Wait one hardware cycle to avoid taxing the processor
-            waitOneFullHardwareCycle();
+            telemetry.update();
+
+            idle();
         }
 
     }

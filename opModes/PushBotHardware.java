@@ -1,9 +1,8 @@
-package com.qualcomm.ftcrobotcontroller.opmodes;
+package org.firstinspires.ftc.teamcode;
 
 import com.qualcomm.ftccommon.DbgLog;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.hardware.DcMotor;
-import com.qualcomm.robotcore.hardware.DcMotorController;
 import com.qualcomm.robotcore.hardware.Servo;
 import com.qualcomm.robotcore.util.Range;
 
@@ -20,7 +19,7 @@ import com.qualcomm.robotcore.util.Range;
  * calls to methods will fail, but will not cause the application to crash.
  *
  * @author SSI Robotics
- * @version 2015-08-13-20-04
+ * @version 2016-09-05-20-04
  */
 public class PushBotHardware extends OpMode
 
@@ -391,7 +390,7 @@ public class PushBotHardware extends OpMode
         if (v_motor_left_drive != null)
         {
             v_motor_left_drive.setMode
-                ( DcMotorController.RunMode.RUN_USING_ENCODERS
+                ( DcMotor.RunMode.RUN_USING_ENCODER
                 );
         }
 
@@ -410,7 +409,7 @@ public class PushBotHardware extends OpMode
         if (v_motor_right_drive != null)
         {
             v_motor_right_drive.setMode
-                ( DcMotorController.RunMode.RUN_USING_ENCODERS
+                ( DcMotor.RunMode.RUN_USING_ENCODER
                 );
         }
 
@@ -447,10 +446,10 @@ public class PushBotHardware extends OpMode
         if (v_motor_left_drive != null)
         {
             if (v_motor_left_drive.getMode () ==
-                DcMotorController.RunMode.RESET_ENCODERS)
+                DcMotor.RunMode.STOP_AND_RESET_ENCODER)
             {
                 v_motor_left_drive.setMode
-                    ( DcMotorController.RunMode.RUN_WITHOUT_ENCODERS
+                    ( DcMotor.RunMode.RUN_WITHOUT_ENCODER
                     );
             }
         }
@@ -470,10 +469,10 @@ public class PushBotHardware extends OpMode
         if (v_motor_right_drive != null)
         {
             if (v_motor_right_drive.getMode () ==
-                DcMotorController.RunMode.RESET_ENCODERS)
+                DcMotor.RunMode.STOP_AND_RESET_ENCODER)
             {
                 v_motor_right_drive.setMode
-                    ( DcMotorController.RunMode.RUN_WITHOUT_ENCODERS
+                    ( DcMotor.RunMode.RUN_WITHOUT_ENCODER
                     );
             }
         }
@@ -511,7 +510,7 @@ public class PushBotHardware extends OpMode
         if (v_motor_left_drive != null)
         {
             v_motor_left_drive.setMode
-                ( DcMotorController.RunMode.RESET_ENCODERS
+                ( DcMotor.RunMode.STOP_AND_RESET_ENCODER
                 );
         }
 
@@ -530,7 +529,7 @@ public class PushBotHardware extends OpMode
         if (v_motor_right_drive != null)
         {
             v_motor_right_drive.setMode
-                ( DcMotorController.RunMode.RESET_ENCODERS
+                ( DcMotor.RunMode.STOP_AND_RESET_ENCODER
                 );
         }
 

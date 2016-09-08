@@ -1,9 +1,10 @@
-package com.qualcomm.ftcrobotcontroller.opmodes;
+package org.firstinspires.ftc.teamcode;
 
 //------------------------------------------------------------------------------
 //
 // PushBotAutoSensors
 //
+
 /**
  * Provide a basic autonomous operational mode that uses the left and right
  * drive motors and associated encoders, the left arm motor and associated touch
@@ -11,7 +12,7 @@ package com.qualcomm.ftcrobotcontroller.opmodes;
  * machine for the Push Bot.
  *
  * @author SSI Robotics
- * @version 2015-08-13-19-48
+ * @version 2016-09-05-19-48
  */
 public class PushBotAutoSensors extends PushBotTelemetrySensors
 

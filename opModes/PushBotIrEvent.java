@@ -1,4 +1,4 @@
-package com.qualcomm.ftcrobotcontroller.opmodes;
+package org.firstinspires.ftc.teamcode;
 
 //------------------------------------------------------------------------------
 //
@@ -9,7 +9,7 @@ package com.qualcomm.ftcrobotcontroller.opmodes;
  * IR seeker implemented using a state machine for the Push Bot.
  *
  * @author SSI Robotics
- * @version 2015-08-16-08-41
+ * @version 2016-09-05-08-41
  */
 public class PushBotIrEvent extends PushBotTelemetrySensors
 

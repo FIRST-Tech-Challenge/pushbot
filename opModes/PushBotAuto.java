@@ -1,16 +1,17 @@
-package com.qualcomm.ftcrobotcontroller.opmodes;
+package org.firstinspires.ftc.teamcode;
 
 //------------------------------------------------------------------------------
 //
 // PushBotAuto
 //
+
 /**
  * Provide a basic autonomous operational mode that uses the left and right
  * drive motors and associated encoders implemented using a state machine for
  * the Push Bot.
  *
  * @author SSI Robotics
- * @version 2015-08-01-06-01
+ * @version 2016-09-05-06-01
  */
 public class PushBotAuto extends PushBotTelemetry
 

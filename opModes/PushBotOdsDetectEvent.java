@@ -1,9 +1,13 @@
-package com.qualcomm.ftcrobotcontroller.opmodes;
+package org.firstinspires.ftc.teamcode;
 
 //------------------------------------------------------------------------------
 //
 // PushBotOdsDetectEvent
 //
+
+import com.qualcomm.robotcore.eventloop.opmode.Disabled;
+import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
+
 /**
  * Provide a basic autonomous operational mode that demonstrates the use of an
  * optical distance sensor to detect a line implemented using a state machine
@@ -12,6 +16,9 @@ package com.qualcomm.ftcrobotcontroller.opmodes;
  * @author SSI Robotics
  * @version 2015-08-30-11-45
  */
+@TeleOp(name = "PushBotOdsDetectEvent", group = "pushbot")
+@Disabled
+// comment out the above line if you want this op mode to be enabled.
 public class PushBotOdsDetectEvent extends PushBotTelemetrySensors
 
 {

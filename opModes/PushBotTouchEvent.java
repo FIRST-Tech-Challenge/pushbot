@@ -1,4 +1,4 @@
-package com.qualcomm.ftcrobotcontroller.opmodes;
+package org.firstinspires.ftc.teamcode;
 
 //------------------------------------------------------------------------------
 //
@@ -9,7 +9,7 @@ package com.qualcomm.ftcrobotcontroller.opmodes;
  * touch sensor to control the arm using a state machine for the Push Bot.
  *
  * @author SSI Robotics
- * @version 2015-08-30-11-45
+ * @version 2016-09-05-11-45
  */
 public class PushBotTouchEvent extends PushBotTelemetrySensors
 

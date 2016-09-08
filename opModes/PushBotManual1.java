@@ -1,9 +1,13 @@
-package com.qualcomm.ftcrobotcontroller.opmodes;
+package org.firstinspires.ftc.teamcode;
 
 //------------------------------------------------------------------------------
 //
 // PushBotManual
 //
+
+import com.qualcomm.robotcore.eventloop.opmode.Disabled;
+import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
+
 /**
  * Provide a basic manual operational mode that uses the left and right
  * drive motors, left arm motor, servo motors and gamepad input from only one
@@ -12,6 +16,8 @@ package com.qualcomm.ftcrobotcontroller.opmodes;
  * @author SSI Robotics
  * @version 2015-09-05-20-12
  */
+@TeleOp(name="PushBotManual", group = "pushbot")
+@Disabled
 public class PushBotManual1 extends PushBotTelemetry
 
 {

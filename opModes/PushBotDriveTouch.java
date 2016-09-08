@@ -1,6 +1,7 @@
-package com.qualcomm.ftcrobotcontroller.opmodes;
+package org.firstinspires.ftc.teamcode;
 
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
+import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.TouchSensor;
 
@@ -10,6 +11,9 @@ import com.qualcomm.robotcore.hardware.TouchSensor;
  * will run its motors unless a touch sensor
  * is pressed.
  */
+@TeleOp(name = "PushBotDriveTouch", group = "pushbot")
+//@Disabled
+// comment out the above line if you want this op mode to be enabled.
 public class PushBotDriveTouch extends LinearOpMode {
     DcMotor leftMotor;
     DcMotor rightMotor;
@@ -42,9 +46,10 @@ public class PushBotDriveTouch extends LinearOpMode {
             }
 
             telemetry.addData("isPressed", String.valueOf(touchSensor.isPressed()));
+            telemetry.update();
 
-            // Wait for a hardware cycle to allow other processes to run
-            waitOneFullHardwareCycle();
+            idle();
+
         }
 
     }
